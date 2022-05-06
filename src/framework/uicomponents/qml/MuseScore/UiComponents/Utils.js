@@ -69,7 +69,7 @@ function getItem(model, row) {
 function makeMnemonicText(text) {
     var index = text.indexOf("&")
     if (index !== -1) {
-        if (index === text.lenght - 1) {
+        if (index === text.length - 1) {
             text = removeAmpersands(text)
         } else {
             text = text.replace(text.substr(index, 2), ("<u>" + text.substr(index + 1, 1) + "</u>"))
