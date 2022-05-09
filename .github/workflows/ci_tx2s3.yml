@@ -27,7 +27,7 @@ jobs:
           echo "not set credentials, not possible run"
         fi  
         echo "DO_RUN: $DO_RUN"
-        echo ::set-output name=available::$DO_RUN"
+        echo "::set-output name=available::$DO_RUN"
 
   tx2s3:
     needs: secrets
