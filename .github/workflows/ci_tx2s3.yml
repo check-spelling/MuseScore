@@ -52,6 +52,7 @@ jobs:
         path: ./share/locale
   tx2s3_mu3:
     runs-on: ubuntu-18.04
+    needs: secrets
     if: needs.secrets.available
     steps:
     - name: Clone repository
